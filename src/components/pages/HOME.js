@@ -10,7 +10,7 @@ class HOME extends Component {
     return (
 
       <Container>
-        <DOM_h1 content="HOME" />
+        <DOM_h1 content="Agence Pêche" />
         <DOM_link url="/404" content="Go to 404" />
       </Container>
 
