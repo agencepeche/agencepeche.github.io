@@ -1,0 +1,30 @@
+{
+  "name": "agencepeche.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agencepeche/agencepeche.github.io.git"
+  },
+  "author": "Thomas Dubois <thomasdubois085@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agencepeche/agencepeche.github.io/issues"
+  },
+  "homepage": "https://agencepeche.github.io"
+}
