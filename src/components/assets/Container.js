@@ -6,8 +6,10 @@ class Container extends Component {
 
     return (
 
-      <div className="container">
-        {this.props.children}
+      <div className="relative">
+        <div className="container">
+          {this.props.children}
+        </div>
       </div>
 
     )
