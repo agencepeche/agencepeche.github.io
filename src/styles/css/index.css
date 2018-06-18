@@ -43,7 +43,8 @@ body {
   @media (max-width: 1024px) {
     .container nav {
       z-index: 10;
-      height: 70px; } }
+      height: 70px;
+      box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.19); } }
   .container nav .ellipse-1 {
     position: absolute;
     top: -350px;
