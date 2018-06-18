@@ -7,11 +7,21 @@
     z-index: 2;
     height: 26px;
 
+    @media(max-width: 1024px) {
+      z-index: 10;
+      height: 70px;
+    }
+
     .ellipse-1 {
       position: absolute;
       top: -350px;
       left: -300px;
       transition: transform 0.5s ease-in-out;
+
+      @media(max-width: 1024px) {
+        display: none;
+      }
+
     }
 
     .navbar-logo {
@@ -22,6 +32,12 @@
       z-index: 2;
       position: relative;
       padding: 35px 0;
+
+      @media(max-width: 1024px) {
+        width: 100%;
+        background-image: linear-gradient(to right, #ED7232, #FF3E4A);
+        padding: 35px 20px;
+      }
 
       svg {
         height: 26px;
@@ -48,6 +64,10 @@
       list-style-type:none;
       padding: 35px 0;
       transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+
+      @media(max-width: 1024px) {
+        display: none;
+      }
 
       li {
         width: 25%;
@@ -76,18 +96,34 @@
     top: -30px;
     right: -443px;
     transition: right 0.5s ease-in-out;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+
   }
 
   .ellipse-4 {
     position: absolute;
     top: 300px;
     left: 0;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+
   }
 
   .ellipse-5 {
+    width: 260px;
     position: absolute;
-    top: 200px;
+    top: 100px;
     right: 0;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+
   }
 
   #header {
@@ -95,6 +131,11 @@
     width: 100%;
     display: flex;
     align-items: flex-end;
+
+    @media(max-width: 1024px) {
+      padding: 90px 20px 0 20px;
+      align-items: center;
+    }
 
     > div {
       width: 600px;
@@ -105,6 +146,13 @@
         position: absolute;
         bottom: -50px;
         right: -80px;
+
+        @media(max-width: 1024px) {
+          bottom: -180px;
+          right: 0;
+          left: 0;
+          margin: auto;
+        }
 
         path {
           transform-origin: center;
@@ -119,6 +167,13 @@
         line-height: 68px;
         font-family: 'Playfair';
         font-weight: bold;
+
+        @media(max-width: 1024px) {
+          font-size: 40px;
+          text-align: center;
+          line-height: normal;
+        }
+
       }
 
       p {
@@ -128,6 +183,11 @@
         line-height: 32px;
         letter-spacing: 0.4px;
         margin-top: 46px;
+
+        @media(max-width: 1024px) {
+          font-size: 14px;
+        }
+
       }
 
       button {
@@ -143,6 +203,12 @@
         display: flex;
         align-items: center;
 
+        @media(max-width: 1024px) {
+          margin-left: auto;
+          margin-right: auto;
+          flex-direction: column;
+        }
+
         &:hover {
           img {
             transform: rotate(360deg);
@@ -154,6 +220,12 @@
           margin-left: 10px;
           transition: transform 0.5s;
           transform-origin: right;
+
+          @media(max-width: 1024px) {
+            margin-left: 0;
+            margin-top: 10px;
+          }
+
         }
 
       }
@@ -162,21 +234,32 @@
 
   }
 
-
   #agency {
-    min-height: 100vh;
+    // min-height: 100vh;
     padding-top: 100px;
     width: 100%;
     display: flex;
+
+    @media(max-width: 1024px) {
+      padding: 80px 20px 0 20px;
+    }
 
     .cards {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      margin: 21px 0;
+
+      @media(max-width: 1024px) {
+        flex-wrap: wrap;
+      }
 
       .card {
         width: 185px;
+        margin: 21px 0;
+
+        @media(max-width: 1024px) {
+          width: 40vw;
+        }
 
         img {
           box-shadow: 0px 10px 13px 0 rgba(0, 0, 0, 0.19);
@@ -228,17 +311,23 @@
   }
 
   #values {
-
-    min-height: 100vh;
+    // min-height: 100vh;
     padding-top: 100px;
     width: 100%;
     display: flex;
+
+    @media(max-width: 1024px) {
+      padding: 80px 20px 0 20px;
+    }
 
     .cards {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      margin: 21px 0;
+
+      @media(max-width: 1024px) {
+        flex-wrap: wrap;
+      }
 
       .card {
         box-shadow: 0px 10px 13px 0 rgba(0, 0, 0, 0.19);
@@ -248,6 +337,11 @@
         flex-direction: column;
         align-items: center;
         background: $white;
+        margin: 21px 0;
+
+        @media(max-width: 1024px) {
+          width: 40vw;
+        }
 
         img {
           height: 35px;
@@ -271,15 +365,19 @@
   }
 
   #contact {
-
-    min-height: 100vh;
+    // min-height: 100vh;
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
     display: flex;
 
+    @media(max-width: 1024px) {
+      padding: 80px 20px 80px 20px;
+    }
+
     .content {
       width: 834px !important;
+      max-width: 100% !important;
     }
 
     form {
@@ -313,12 +411,21 @@
         justify-content: space-between;
         margin: 25px 0;
 
+        @media(max-width: 1024px) {
+          flex-direction: column;
+          margin: 0;
+        }
+
         .input-text {
           width: 356px;
           display: flex;
           flex-direction: column;
           display: block;
           position: relative;
+
+          @media(max-width: 1024px) {
+            margin-top: 25px;
+          }
 
           &:before {
             content: '';
@@ -394,6 +501,10 @@
     width: 65px;
     padding-top: 12px;
 
+    @media(max-width: 1024px) {
+      display: none;
+    }
+
     span {
       width: 43px;
       height: 1.5px;
@@ -459,6 +570,11 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 35px 0;
+
+    @media(max-width: 1024px) {
+      margin: 0;
+      padding: 35px 20px;
+    }
 
     button {
       font-family: 'Open Sans';

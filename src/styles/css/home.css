@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 37 of src/styles/scss/home.scss
+        on line 53 of src/styles/scss/home.scss
 
-32:       span {
-33:         font-family: 'Montserrat';
-34:         font-weight: 400;
-35:         letter-spacing: 2.8px;
-36:         font-size: 14px;
-37:         color: $white;
-38:         margin-left: 30px;
-39:         transition: opacity 0.5s ease-in-out;
-40:       }
-41: 
-42:     }
+48:       span {
+49:         font-family: 'Montserrat';
+50:         font-weight: 400;
+51:         letter-spacing: 2.8px;
+52:         font-size: 14px;
+53:         color: $white;
+54:         margin-left: 30px;
+55:         transition: opacity 0.5s ease-in-out;
+56:       }
+57: 
+58:     }
 
 Backtrace:
-src/styles/scss/home.scss:37
+src/styles/scss/home.scss:53
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -102,4 +102,4 @@ src/styles/scss/home.scss:37
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 37 of src/styles/scss/home.scss\A \A 32:       span {\A 33:         font-family: 'Montserrat';\A 34:         font-weight: 400;\A 35:         letter-spacing: 2.8px;\A 36:         font-size: 14px;\A 37:         color: $white;\A 38:         margin-left: 30px;\A 39:         transition: opacity 0.5s ease-in-out;\A 40:       }\A 41: \A 42:     }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 53 of src/styles/scss/home.scss\A \A 48:       span {\A 49:         font-family: 'Montserrat';\A 50:         font-weight: 400;\A 51:         letter-spacing: 2.8px;\A 52:         font-size: 14px;\A 53:         color: $white;\A 54:         margin-left: 30px;\A 55:         transition: opacity 0.5s ease-in-out;\A 56:       }\A 57: \A 58:     }"; }
